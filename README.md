@@ -81,12 +81,12 @@ docker run -d \
 | `SUB_URL` | 无 | 你的订阅/节点链接（例如：https://example.com/sub ）。 |
 | `UPDATE_INTERVAL` | 无 | 订阅自动更新间隔时间（单位：小时，例如：`6`）。若不配置则不会启用自动定时更新功能。 |
 | `ALLOW_LAN` | 无 | 是否允许局域网外部访问（可选值：`true` 或 `false`）。 |
+| `BIND_ADDRESS` | 绑定地址 | 配合局域网使用，需设置为 0.0.0.0 |
 | `MIXED_PORT` | 无 | 动态修改或置顶混合代理端口（例如：`7890`）。 |
 | `MIHOMO_MODE` | 无 | 动态修改运行模式（可选值：`Rule`, `Global`, `Direct`）。 |
 | `IPV6` | 无 | 动态修改 IPv6 总开关（可选值：`true` 或 `false`）。 |
 | `WEBUI_LISTEN_ADDR`| `0.0.0.0:9090` | Web UI 控制面板的监听地址与端口。 |
 | `WEBUI_SECRET` | 随机生成 | Web UI 控制面板的外部控制访问密钥（密码）。若不指定则在每次容器启动时随机生成，可通过查看容器启动日志获取。 |
-| `BIND_ADDRESS` | 绑定地址 | 配合局域网使用，需设置为 0.0.0.0 |
 
 ---
 
